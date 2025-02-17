@@ -1,0 +1,135 @@
+head{
+    background-color: #242D34;
+    height: 100px;
+}
+
+body{
+    background-color: #242D34;
+}
+
+.title {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 70px; /* Makes sure the title div takes up the full viewport height */
+}
+
+.icon-container {
+    text-align: center; /* Center the image horizontally */
+}
+
+.icon {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+}
+
+.content{
+    border-radius: 20px;
+    background-color: #101010;
+    width: 550px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.exitButton{
+    background-color: #101010;
+    border: none;
+    width: 30px;
+    height: 30px;
+    margin-top: 8px;
+    margin-left: 6px;
+    border-radius: 25px;
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 20;
+    color: #fff;
+    cursor: pointer;
+}
+
+.exitButton:hover{
+    background-color:#303030 ;
+}
+
+.signCaption{
+    margin-left: 160px;
+}
+
+.formCaption{
+    font-family: 'Roboto';
+    color: #fff;
+}
+
+.connectButton{
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-left: 180px;
+    margin-bottom: 12px;
+    border: none;
+    font-family: 'Arial';
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.connectButton:hover{
+    background-color: #C4C4C4;
+}
+
+hr{
+    width: 400px;
+    margin-bottom: 12px;
+}
+
+.inputUser{
+    width: 200px;
+    padding: 13px;
+    border: #fff;
+    border-width: 2px;
+    border-radius: 6px;
+    background-color: #303030;
+    margin-top: 5px;
+    margin-left: 180px;
+    margin-bottom: 12px;
+    text-align: left;
+    color: #C4C4C4;
+}
+
+.responseButton{
+    width: 200px;
+    padding: 7px;
+    border-radius: 20px;
+    margin-top: 5px;
+    margin-left: 180px;
+    margin-bottom: 12px;
+    font-family: 'Arial';
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.responseButton.Next:hover{
+    background-color:#C4C4C4
+}
+
+.responseButton.Forgot{
+    background-color: #101010;
+    border: 1px solid #C4C4C4;
+    color: #C4C4C4;
+    margin-bottom: 50px;
+}
+
+.responseButton.Forgot:hover{
+    background-color:#444444 ;
+}
+
+.signUpCaption{
+    text-align: center;
+    font-family: 'Raleway';
+    font-size: 10.5px;
+    color: #fff;
+
+}
+
+.link{
+    color: #2E82BA;
+}
