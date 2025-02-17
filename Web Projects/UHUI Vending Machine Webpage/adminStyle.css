@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    overflow: auto;
+}
+
+section{
+    overflow: hidden;
+    display: flex;
+    min-height: 150vh;
+    align-items:start;
+    justify-content: center;
+    background: linear-gradient(to bottom, #f7f7fe, #dff1ff);
+}
+
+.head{
+    display: flex;
+    min-height: 25vh;
+    position: sticky;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    background: linear-gradient(to bottom, #f7f7fe, #dff1ff);
+    box-shadow: 10px 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+section .colour{
+    position: absolute;
+    filter: blur(150px);
+}
+
+section .colour:nth-child(1){
+    top: 300px;
+    left: -200px;
+    width: 600px;
+    height: 600px;
+    background: #bf4ad4;
+}
+
+section .colour:nth-child(2){
+    left: 750px;
+    width: 500px;
+    height: 500px;
+    bottom: -650px;
+    background: #ffa500;
+}
+
+section .colour:nth-child(3) {
+    right: 100px;
+    bottom: 150px;
+    width: 300px;
+    height: 300px;
+    background: #2b67f3;
+}
+
+.box{
+    position: relative;
+}
+
+.box .square {
+    position: absolute;
+    border-radius: 14px;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.box .square:nth-child(1){
+    top: -50px;
+    left: -100px;
+    width: 100px;
+    height: 100px;
+}
+
+.box .square:nth-child(2){
+    z-index: 2;
+    top: 150px;
+    right: -100px;
+    width: 90px;
+    height: 90px;
+}
+
+.box .square:nth-child(3){
+    z-index: 2;
+    width: 80px;
+    height: 80px;
+    right: -50px;
+    bottom: -60px;
+}
+
+.box .square:nth-child(4){
+    left: 100px;
+    width: 50px;
+    height: 50px;
+    bottom: -80px;
+}
+
+.box .square:nth-child(5){
+    top: -80px;
+    left: 140px;
+    width: 60px;
+    height: 60px;
+}
+
+.container {
+    margin-top: 20px;
+    width: 1300px;
+    display: flex;
+    min-height: 700px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 10px 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    position: relative;
+}
+
+.form h2{
+    color: ghostwhite;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 40px;
+    letter-spacing: 4px;
+}
+
+.form h2::before{
+    left: 0;
+    width: 80px;
+    height: 4px;
+    content: "";
+    bottom: -10px;
+    background: #fff;
+    position: absolute;
+}
+
+h1{
+    color: rgb(92, 92, 93);
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+}
+
+h1::before{
+    left: 0;
+    width: 80px;
+    height: 4px;
+    content: "";
+    bottom: -10px;
+    background: #fff;
+    position: absolute;
+}
+
+nav a{
+    color: rgb(92, 92, 93);
+    text-decoration: none;
+    margin-top: 0px;
+    float: left;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    background: linear-gradient(to bottom, #f7f7fe, #dff1ff);
+    box-shadow: 10px 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar {
+    margin-top: 20px;
+    margin-left: 30px;
+    display: flex;
+}
+
+.navbar :hover{
+    text-decoration: underline;
+}

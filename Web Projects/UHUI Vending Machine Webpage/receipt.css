@@ -1,0 +1,75 @@
+*{
+    font-family: Calibri;
+    letter-spacing: 1px;
+    overflow: normal;
+}
+
+img{
+    margin-left: 42%;
+}
+.container{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.level1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.level2{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.level2 th{
+    padding-right: 190px;
+    font-size: 18px;
+}
+
+.level3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.level3 td{
+    padding-inline: 125px;
+    font-size: 16px;
+}
+
+.level4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.level4 th{
+    padding-inline: 380px;
+    font-size: 18px;
+}
+
+.level5{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+.level5 th{
+    padding-right: 260px;
+    font-size: 18px;
+}
+
+#orderNo{
+    margin-left: -65%;
+    text-align: left;
+}
+
+.message{
+    text-align: left;
+    margin-left: 15%;
+}

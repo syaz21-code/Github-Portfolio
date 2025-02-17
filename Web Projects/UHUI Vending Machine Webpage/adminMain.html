@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="adminStyle.css">
+    <link rel="icon" type="image/x-icon" href="uhuiLogo.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Admin Center</title>
+</head>
+<body>
+    <section class="head">
+        <h1>ADMIN CENTER</h1>
+        <div class="navbar">
+            <nav class="nav"><a data-file="adminMenu.php">Menu Update</a></nav>
+            <nav class="nav"><a data-file="adminDaily.php">Daily Report</a></nav>
+            <nav class="nav"><a data-file="adminMonthly.php">Monthly Report</a></nav>
+            <nav><a href="logout.php">Log Out</a></nav>
+        </div>
+    </section>
+    <section>
+        <div class="colour"></div>
+        <div class="colour"></div>
+        <div class="colour"></div>
+        <div class="box">
+            <div class="square" style="--i: 0"></div>
+            <div class="square" style="--i: 1"></div>
+            <div class="square" style="--i: 2"></div>
+            <div class="square" style="--i: 3"></div>
+            <div class="square" style="--i: 4"></div>
+            <div class="container">
+                <div class="form">
+                    <form id="displayPHP">
+                        <div id="contentToLoad"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+    $(document).ready(function() {
+    // Load the default content (adminMenu.php)
+        $("#contentToLoad").load("adminMenu.php");
+
+        // Handle click events on navigation links
+        $(".nav a").click(function(event) {
+            event.preventDefault();
+            const fileName = $(this).data("file");
+            $("#contentToLoad").load(fileName);
+        });
+    });
+
+    </script>
+</body>
+</html>

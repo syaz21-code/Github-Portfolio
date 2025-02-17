@@ -1,0 +1,136 @@
+*{
+    font-family: Calibri;
+    letter-spacing: 1px;
+    overflow-x: hidden;
+    font-size: 18px;
+}
+
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    overflow: hidden;
+}
+
+.container {
+    top: -20px;
+    background-color: #ffffff;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.drop-container {
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px dashed #555;
+    color: #444;
+    cursor: pointer;
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+}
+  
+.drop-container:hover {
+    background: #eee;
+    border-color: #111;
+}
+  
+.drop-container:hover .drop-title {
+    color: #222;
+}
+  
+.drop-title {
+    color: #444;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    transition: color .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #084cdf;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+  }
+  
+  input[type=file]::file-selector-button:hover {
+    background: #0d45a5;
+  }
+
+label {
+    font-family: Calibri;
+}
+
+.fl-table {
+    margin-left: 100px;
+    border-radius: 5px;
+    font-weight: normal;
+    border: 1.8px solid #212121;
+    border-collapse: collapse;
+    width: 200px;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.fl-table td, .fl-table th {
+    border: 1px solid #212121;
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 14px;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: #8f8f8f;
+}
+
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #20252a;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+.submitButton{
+    color: #212121;
+    cursor: pointer;
+    background-color: #eeeeee;
+    height: 40px;
+    width: 220px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.submitButton:hover {
+    color: #eeeeee;
+    background-color: #212121;
+}

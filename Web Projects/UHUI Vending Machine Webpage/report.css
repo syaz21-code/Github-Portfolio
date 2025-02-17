@@ -1,0 +1,77 @@
+*{
+    font-family: Calibri;
+    letter-spacing: 2px;
+    overflow-x: hidden;
+    font-size: 18px;
+}
+
+.img{
+    display:flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 1200px;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    font-family: Calibri;
+}
+
+.fl-table {
+    margin-left: 100px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: 1.7px solid #212121;
+    border-collapse: collapse;
+    width: 200px;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 16px;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: #8f8f8f;
+}
+
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #20252a;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+.submitButton{
+    color: #212121;
+    cursor: pointer;
+    background-color: #eeeeee;
+    height: 40px;
+    width: 220px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.submitButton:hover {
+    color: #eeeeee;
+    background-color: #212121;
+}
