@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="EN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GPA Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div>
+            <table>
+                <tr>
+                    <h2>GPA Calculator</h2>
+                </tr>
+                <tr>
+                    <th><b>Course Code</b></th>
+                    <th><b>Credit Hour</b></th>
+                    <th><b>Grade</b></th>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td>
+                        <select id="dropdown">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="dropdown">
+                            <option value="A">A</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td>
+                        <select id="dropdown">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="dropdown">
+                            <option value="A">A</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td>
+                        <select id="dropdown">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="dropdown">
+                            <option value="A">A</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td>
+                        <select id="dropdown">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="dropdown">
+                            <option value="A">A</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td>
+                        <select id="dropdown">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="dropdown">
+                            <option value="A">A</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B">B</option>
+                            <option value="C+">C+</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
+                            <option value="E">E</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <table style="border: none;">
+                <tr>
+                    <td class="result"><b>Total Credit Hour:</b></td>
+                    <td class="output"><label id="totalCredit">0.00</label></td>
+                </tr>
+                <tr>    
+                    <td class="result"><b>GPA:</b></td>                        
+                    <td class="output"><label id="result">0.00</label></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <input type="submit" value="Calculate" class="button-17" onclick="calculateGPA()">
+                    <input type="reset" value="Reset" class="button-17" onclick="resetForm()">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
